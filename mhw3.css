@@ -1,0 +1,803 @@
+body {
+    margin: 0;
+}
+
+
+/*header*/
+header {
+    height: 600px;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+
+/*first white line*/
+#firstline {
+    display: flex;
+    height: 60px;
+    justify-content: flex-start;
+    margin-bottom: 0px;
+    margin-left: 40px;
+}
+#firstline_sx {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+.line{
+    display: flex;
+    margin-right: 15px;
+}   
+.text{
+    justify-content: flex-start;
+    color: #404040;
+    font-size: 14px;
+    margin-top: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+}  
+.img_promo{
+    height: 3.75rem;
+    width: 5rem;
+}
+#firstline_dx {
+    display: flex;
+    width: 50%;
+    justify-content: right;
+    align-items: center;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+#accedi{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+/*nav*/
+nav {
+    display: flex;
+    height: 100px;
+    flex-direction: column;
+    background-color:black;
+}
+#navigazione{
+    display:flex;
+    height: 50%;
+    justify-content:space-between;
+    margin-top: 10px;
+}
+#logo{
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    margin-left: 30px;
+}
+.ricerca{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin-right: 1rem;
+    overflow: visible;
+    padding: 0 30px;
+    height: 100%;
+} 
+.ricerca input{
+    width: 100%;
+    height: 40px;
+}
+.img_nav{
+    width: auto;
+    height: auto;
+    width: 100%;
+    height: 100%;
+}
+.divnav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 300px;
+}
+#opzioni{
+    display: flex;
+    height: 50%;
+    align-items: end;
+    margin-left: 30px;
+    margin-bottom: 40px;
+}  
+#opzioni :hover{
+    color: #ffc4bc;
+}
+#menu{
+    display: flex;
+    flex-direction: column;
+}
+.option{
+    margin-top: 8px;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    padding: 5px 15px;
+}
+#menu_img{
+    height: 1.75rem;
+    width: 3rem;
+}
+
+/* spazio immagine*/
+#section_image{
+    display: flex;
+    height: 340px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #fc9285 40%, #c8d796 60%);
+}
+#section_img{
+    display: flex;
+    height:auto;
+    max-width: 1035px;
+}
+#section_img img{
+    max-width: 100%;
+    height: auto;
+    display: none;
+}
+#section_img img:nth-child(1){
+    display: block;
+}
+#section_image button{
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border: transparent;
+    color: black;
+    font-size: 40px;
+    font-style: oblique;
+}
+
+
+/*corpo*/
+#corpo{
+    display: flex;
+    height: 2100px;
+    width: 55%;
+    flex-direction: column;
+    justify-content:start;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1035px;
+}
+
+
+/*box1*/
+#boxuno{
+    display: flex;
+    height: 120px;
+    justify-content: space-around;
+    align-items:flex-start;
+} 
+.lot{
+    height: 80px;
+    width: auto;
+    border-right: 1px solid rgb(225, 225, 225);
+} 
+.marchi{
+    max-width: 7.5rem;
+    max-height: 3.125rem;
+    image-rendering: -webkit-optimize-contrast;
+    margin-top: 15px;
+    margin-right: 20px;
+    margin-left: 5px;
+} 
+.linkbox{
+    color: #404040;
+    font-size: 16px;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+}      
+.img{
+    height:auto;
+    max-height: 100%;
+    width: auto;
+    max-width: 100%;
+}
+
+
+/*box2*/
+#boxdue{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+} 
+.linkbox{
+    text-decoration: none;
+}
+.linkbox :hover{
+    color: #98006a;
+}
+
+
+/*box3*/
+#boxtre{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+
+/*box4 pallini categorie*/
+.shop-categorie{
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
+    margin-top: 60px;
+}   
+.categoria{
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    text-align: center;
+}
+.imgcat{
+    height: 80px;
+    width: auto;
+    border-radius: 50%;
+}
+.ball{
+    color: #404040;
+    text-decoration: none;
+}
+.ball :hover{
+    color: #b3017e;  
+}
+.nome-cat{
+    color: rgb(20, 20, 20);
+    font-size: 18px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/*box5*/
+#txt5 {
+    margin-top: 120px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+#box_cinque{
+    display: flex;
+    height: 300px;
+    width: auto;
+    margin-top: 10px;
+    justify-content: space-around;
+}
+#box_five{
+    width: 1050;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.box_immagine_cinque{
+    display: flex;
+    flex-direction: column;
+}
+#imgbooster{
+    height: 160px;
+    width:  260px;
+}
+#imgdetox{
+    height: 160px;
+    width:  260px;
+}
+#imgmakeup{
+    height: 160px;
+    width:  260px;
+
+}
+.box_immagine_cinque a {
+    color: black;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+.box_immagine_cinque a :hover{
+    color: #98006a;
+}
+
+
+/*box6*/
+.textbody{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}  
+#offertesettimana{
+    display: flex;
+    height: 400px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    flex-direction: column;
+}   
+.prodotti{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}  
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.375rem 0;
+    width: 22%;
+    margin:10px;
+}  
+.par{
+    text-align: center;
+    color: #404040;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}  
+.brand{
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}  
+.imgprodotti{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 10rem;
+    display: block;
+    margin: 0px 1rem;
+    padding: 0px 5%;
+}
+
+
+/*box7*/
+#nuoviprodotti{
+    display: flex;
+    height: 400px;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.elemento{
+    height: 50px;
+    width: auto;
+    border-radius: 50%;
+    background-color: transparent;
+    border-color:  transparent;
+}
+.preferito {
+    background-color:#fc9285;
+    border: #dc0069;
+}
+
+
+/*sezione verde*/
+#colorsection{
+    margin: 0;
+    background-color:#c8d796;
+    height: 800px;
+}
+
+/* MODALE*/
+#modale{
+    display: flex;
+    height: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 80px;
+}
+
+#lastt{
+    display: flex;
+    width: auto;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+#step{
+    display: flex;
+}
+#step span{
+    margin-right: 40px;
+    margin-left: 40px;
+}
+#album-view img {
+    border: 1px solid transparent;
+    margin: 5px;
+    padding: 5px;
+    height: 150px;
+}
+#modal-view {
+    position: absolute;
+    top: 2400px;
+    left: 0;
+    height: 60vh;
+    width: 98vw;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+#modal-view img {
+    max-height: 100%;
+    max-width: 100%;
+}
+#modal-view.hidden {
+    display: none;
+}
+
+
+/*API MAKEUP RICERCA DEL BRAND*/
+#ricercamakeup{
+    display: flex;
+    height: 400px;
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    flex-direction: column;
+  }
+  form {
+    text-align: center;
+  }
+  label {
+    font-weight: bold;
+  }
+  input[type="text"] {
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px;
+  }
+  button {
+    padding: 8px 16px;
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color:  #dc0069;
+    color:white;
+  }
+  #library-view {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin: 20px;
+    margin-top: 50px;
+  }
+  .product-container {
+    border-right: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+    width: 20%;
+  }
+  .product-container img {
+    max-width: 200px;
+    height: auto;
+  }
+  /*fine header*/
+
+
+/*footer*/
+footer {
+    display: flex;
+    height: 1000px;
+    background-color: black;
+}
+#coda{
+    display: flex;
+    width: 55%;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;  
+    max-width: 1035px;
+}  
+#contatti{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.hsmallfooter{
+    color: #ffffff;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hfooter{
+    color: #ffffff;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin-right: 40px;
+} 
+#email{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid whitesmoke;
+}
+#chisiamo{
+    margin-bottom: 40px;
+    border-bottom: 1px solid whitesmoke;
+
+}
+.listachisiamo{
+    margin: 0;
+    padding: 0.375rem 0;
+    width: 33%;
+}
+.scrittachisiamo{
+    color: #ffffff;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#app{
+    display: flex;
+    margin-bottom: 15px;
+    border-bottom: 1px solid whitesmoke;
+}
+.applicazione{
+    width: 20%;
+    flex-direction: column;
+}
+.imgapp{
+    height:auto;
+    max-height: 85%;
+    width: auto;
+    max-width: 85%;
+    border-radius: 25%;
+}
+#paesi{
+    margin-bottom: 10px;
+    border-bottom: 1px solid whitesmoke;
+}
+ul{
+    border: 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0.9rem 0 0;
+}
+.listapaesi{
+    margin: 0;
+    padding: 0.375rem 0;
+    width: 25%;
+}
+.linkimg{ 
+    color: transparent;
+    text-align: left;
+}   
+.nomepaese{
+    color: #ffffff;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+#lastline{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.linkpagamento{
+    align-items: center;
+    background-color: #fff;
+    border-radius: .125rem;
+    display: flex;
+    height: 1.6875rem;
+    line-height: 1.8rem;
+    margin: 0 .5rem .3rem 0;
+    padding: 0 .25rem;
+    width: 2rem;
+}
+.carta{ /*img_metodo_pagamento*/
+    height: auto;
+    max-height: 100%;
+    width: 100%;
+}  
+.marchioregistrato{
+    color: #ffffff;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 90px;
+}
+
+
+
+
+@media only screen and (min-width:200px) and (max-width:1500px) {
+    body {
+        margin: 0;
+    }
+    
+    /*header*/
+    header {
+        height: auto;
+        width: auto;
+    }
+    
+    /*first white line*/
+    #firstline {
+        display: none;
+    }
+    /*nav*/
+    nav {
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        background-color: black;
+        padding: 10px 0; 
+    }
+    
+    #navigazione {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px; 
+    }
+    
+    #logo {
+        color: white;
+        font-family: Helvetica, Arial, sans-serif;
+        margin-left: 10px; 
+        font-size: 16px; 
+    }
+        
+    /* spazio immagine*/
+    #section_image {
+        height: auto;
+        background-image: linear-gradient(to right, #fc9285 40%, #c8d796 60%);
+    }
+    
+    #section_img {
+        display: block; 
+        width: auto;
+        height: auto;
+    }
+    
+    .img {
+        max-width: 100%; 
+        height: auto;
+    }
+
+    #lastt{
+       display: none;
+    }
+
+    
+    /*corpo*/
+    #corpo {
+        display: flex;
+        height: auto;
+        width: auto;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        margin: auto;
+        padding: 10px; 
+    }
+    
+    /*box1*/
+    #boxuno {
+        display: flex;
+        height: auto;
+        flex-wrap: wrap; 
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px; 
+    }
+    
+    .lot {
+        height: auto;
+        width: auto;
+        align-items: center;
+        border-right: none; 
+        margin: 5px; /
+    }
+    
+    .marchi {
+        max-width: 100%;
+        max-height: 30px; 
+        margin: 0; 
+    }
+    
+    .linkbox {
+        color: #404040;
+        font-size: 10px;
+        font-family: Helvetica, Arial, sans-serif;
+        text-align: center;
+    }
+    
+    /*box2*/
+    #boxdue {
+        display: none; 
+    }
+
+    #nuoviprodotti{
+        display: flex;
+        height: auto;
+        flex-wrap: wrap; 
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px; 
+    }
+
+    #offertesettimana{
+            display: flex;
+            height: auto;
+            flex-wrap: wrap; 
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 20px; 
+
+    }
+    
+    .textbody {
+        font-size: 12px; 
+        text-align: center;
+    }
+    
+    .prodotti {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; 
+    }
+    
+    .item {
+        width: 45%; 
+        margin: 5px; 
+    }
+    
+    .imgprodotti {
+        max-width: 100%;
+        max-height: 150px; 
+        margin: 5px; 
+    }
+    #box_finale{
+        display: none;
+    }
+
+    footer{
+        display: flex;
+        height: auto;
+        width: auto;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center; 
+        margin: auto;
+        padding: 10px; 
+    }
+    footer .hfooter{
+        font-size: 12px;
+    }
+    footer .hsmallfooter{
+        font-size: 12px;
+    }
+    #contatti{
+        display: flex;
+        flex-direction: column;
+    }
+    #chisiamo span{
+        font-size: 12px;
+    }
+    #paesi span{
+        font-size: 12px;
+    }
+    #coda .marchioregistrato{
+        font-size: 12px;
+    }
+    }
+   

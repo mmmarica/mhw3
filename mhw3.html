@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Cosmetici e profumi online | Profumi Notino</title>
+      <link rel="stylesheet" href="mhw3.css">
+      <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+      <script src="photo-list.js" defer></script>
+      <script src="mhw3.js" defer></script>
+      <script src="API_makeup.js" defer></script>
+      <script src="sign-in.js" defer></script>
+      
+   </head>
+
+    <body>
+
+      <!--TESTA-->
+      <header>
+
+        <!--white line-->
+        <section id="firstline">
+          <div id="firstline_sx">
+            <div class="line">
+            <img class="img_promo" src="https://cdn.notinoimg.com/images/gallery/ba/1/_darek.png">
+            <a class="text">
+              <span><b>-15%</b></span><br>
+              <span>su tutto nell'app</span>
+            </a>
+          </div>
+          <div class="line">
+            <img class="img_promo" src="https://cdn.notinoimg.com/images/gallery/ba/19/2018-03-07_chloe_nomad.png" alt="">
+            <a class="text">
+             <span><b>Regala un profumo</b></span><br>
+             <span>con dedica</span>
+            </a>
+          </div>
+          <div class="line">
+            <img class="img_promo" src="https://cdn.notinoimg.com/images/gallery/ba/19/2018-01-15_Darkove_baleni.png">
+            <a class="text">
+             <span><b>CONFEZIONE REGALO</b></span><br>
+             <span>a soli 4,99€</span>
+            </a> 
+          </div> 
+          </div>
+          <div id="firstline_dx">
+            <div class="line">
+            <span class="text">Chiama lo 011 1988 7822</span>
+            </div>
+            <div class="line">
+            <span class="text" >Spese di spedizione e pagamento</span>
+          </div>
+          <div id="accedi">
+            <button onclick="signIn()"> Sign in</button>
+          </div>
+        
+          </div>
+        </section>
+
+        <!--sezione ricerca-->
+        <nav>
+            <div id="navigazione">
+
+              <h1 id="logo"> NOTINO</h1>
+              
+              <div class="ricerca">  
+                  <input placeholder="Cerca un profumo, una marca, dei cosmetici..." type="search" value="">
+              </div>
+              
+              <div class="divnav">
+                <a  class="linkimg" href="/mynotino/">
+                  <svg color="#ffffff" width="16px" height="16px" title="Il mio account" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 64">
+                      <path fill="currentColor" d="M12.18 37.44C5.48 41.79 0 50.18 0 64h5.67c0-10.73 3.9-18.75 10.51-22.43a27 27 0 0 1-4-4.13zM52.06 37.44a27 27 0 0 1-4 4.13c6.61 3.68 10.51 11.7 10.51 22.43h5.67c0-13.82-5.48-22.21-12.18-26.56zM32.12 40.51c-10.38 0-18.83-9.09-18.83-20.25S21.74 0 32.12 0 51 9.09 51 20.26s-8.5 20.25-18.88 20.25zm0-34.84C24.86 5.67 19 12.21 19 20.26s5.91 14.58 13.17 14.58 13.12-6.54 13.12-14.58S39.38 5.67 32.12 5.67z">
+                      </path>
+                  </svg>
+                </a>
+                <a class="linkimg" href="/wishlist/">
+                  <svg color="#ffffff" height="16px" width="24px" aria-label="Wishlist" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M11.9672727,23.12625 L11.1345455,22.5 C7.71636364,19.9875 5.05454545,17.44125 3.22909091,14.93625 C1.49454545,12.5625 0.538181818,10.27125 0.385454545,8.1375 C0.187012774,6.10535738 0.910493349,4.09271563 2.34545455,2.685 C3.50030137,1.52735746 5.04764879,0.880196689 6.65818182,0.88125 C7.91636364,0.88125 9.54181818,1.0275 10.9490909,2.15625 C11.3317201,2.4506027 11.6838868,2.78487158 12,3.15375 C12.3196784,2.78465931 12.674149,2.44925973 13.0581818,2.1525 C14.4727273,1.0275 16.1018182,0.87375 17.3636364,0.87375 C18.9734518,0.867070062 20.521226,1.51360865 21.6727273,2.67375 C23.1043181,4.08100668 23.8205042,6.0943981 23.6109091,8.1225 C23.4509091,10.26 22.4836364,12.55125 20.7381818,14.925 C18.9090909,17.4375 16.2290909,19.9875 12.8036364,22.5 L11.9672727,23.12625 Z M3.45818182,3.8925 C2.38163066,4.96207375 1.84474893,6.48463678 2.00363636,8.0175 C2.13090909,9.82875 2.98181818,11.82375 4.52727273,13.93875 C6.23636364,16.27875 8.74181818,18.6825 11.9745455,21.06375 C15.2181818,18.6675 17.7345455,16.26 19.4581818,13.90875 C21.0145455,11.79 21.8727273,9.78375 22.0036364,7.98375 C22.1659039,6.45046439 21.6284958,4.92640844 20.5490909,3.85875 C19.6976759,3.00042937 18.554287,2.51989764 17.3636364,2.52 C16.36,2.52 15.0763636,2.62875 14.0509091,3.45 C13.6107404,3.77112064 13.2301409,4.17123511 12.9272727,4.63125 L12.9272727,4.6575 L12,6 L11.0909091,4.665 C10.7856904,4.19920346 10.4027928,3.79291346 9.96,3.465 C8.94181818,2.65125 7.66181818,2.5425 6.66181818,2.5425 C5.46548613,2.54247938 4.31674864,3.02575684 3.46181818,3.88875 L3.45818182,3.8925 Z">
+                      </path>
+                  </svg>
+                </a>
+                <a class="linkimg" href="/cart/">
+                  <svg color="#ffffff" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 64">
+                    <path fill="currentColor" d="M50.54,32.36a2.84,2.84,0,0,1-2.63-1.77L41.62,15a7.37,7.37,0,0,0-5.71-4.76,8.28,8.28,0,0,0-2,0A7.37,7.37,0,0,0,28.21,15L21.92,30.59a2.84,2.84,0,1,1-5.26-2.12L23,12.88A12.72,12.72,0,0,1,36.62,4.62a13,13,0,0,1,10.25,8.26l6.29,15.59a2.83,2.83,0,0,1-1.56,3.69A3.06,3.06,0,0,1,50.54,32.36Z"></path>
+                    <path fill="currentColor" d="M54.64,22.05l2,5A6.6,6.6,0,0,1,53,35.65a6.44,6.44,0,0,1-2.47.49A6.59,6.59,0,0,1,44.41,32l-4-9.95H29.44l-4,10a6.61,6.61,0,0,1-12.26-4.95l2-5H0l7.42,37.2h55l7.42-37.2Z">
+                    </path>
+                  </svg>
+                  <span
+                  style="color: white; margin-left: 15px; font-family: Arial, Helvetica, sans-serif;"> Il carrello</span>
+                </a>
+              </div>
+            </div>
+
+            <div id="opzioni">
+              <a class="option" style="background-color:#dc0069;">Offerte</a>
+              <a class="option">Profumi</a> 
+              <a class="option">Trucco</a> 
+              <a class="option">Capelli</a> 
+              <a class="option">Viso</a> 
+              <a class="option">Corpo</a> 
+              <a class="option">Igiene Orale</a> 
+              <a class="option">Mamma e bimbo</a>
+              <a class="option">Uomo</a> 
+              <a class="option">Dermocosmesi</a> 
+              <a class="option">Altro</a> 
+            </div>
+
+        </nav>
+
+       <!--sezione immagine-->
+        <section id="section_image">
+          <button onclick="prec()"><</button>
+          <div id="section_img">
+          <img id="imguno" src="https://cdn.notinoimg.com/images/gallery/ba/19/it_desk_hp_body-month_sale15_w14_24_01.jpg">
+          <img id="imgdue" src="https://cdn.notinoimg.com/images/gallery/ba/19/it_desk_hp_sale10_w14_24_01.jpg">
+          <img  id="imgtre" src="https://cdn.notinoimg.com/images/gallery/ba/19/it_desk_hp_body-month_sale20_w14_24_01.jpg">
+          <img id="imgquattro" src="https://cdn.notinoimg.com/images/gallery/ba/19/it_desk_hp_body-month_sun_w16_24_01.jpg">
+          </div>
+          <button onclick="succ()">></button>
+        </section>
+
+      </header>
+
+      <!--CORPO-->
+      <section id="corpo">
+        
+        <!--box1-->
+        <div id="boxuno">
+          <div class="lot">
+            <a class="linkbox">
+              <img class="marchi" src="https://cdn.notinoimg.com/images/gallery/logo/240x100px_DIOR_NEW_LOGO.jpg" alt="DIOR">
+            </a>
+          </div>
+          <div class="lot">
+            <a class="linkbox" href="https://www.notino.it/shiseido/" target="_blank">
+              <img class="marchi" src="https://cdn.notinoimg.com/images/gallery/logo/SH_Logo_240x100_cb.jpg">
+            </a>
+          </div>
+          <div class="lot">
+            <a class="linkbox">
+              <img class="marchi" src="https://cdn.notinoimg.com/images/gallery/logo/MAC_LOGO---BP.png">
+            </a>
+          </div>
+          <div class="lot">
+            <a class="linkbox">
+              <img class="marchi" src="https://cdn.notinoimg.com/images/gallery/logo/YSL.png">
+            </a>
+          </div>
+          <div class="lot">
+            <a class="linkbox">
+              <img  class="marchi" src="https://cdn.notinoimg.com/images/gallery/logo/Lancome-logo_240x100.png" >
+            </a>
+          </div>
+          <div class="lot" style="border: none;">
+            <a class="linkbox">
+              <img  class="marchi" src="https://cdn.notinoimg.com/images/gallery/logo/Aveda.jpg">
+            </a>
+          </div>
+        </div>
+
+        <!--box2-->
+        <div id="boxdue">
+          <div class="lot">
+          <a class="linkbox" href="https://www.notino.it/perche-scegliere-notino/#benefit-money-back" target="_blank">
+            <p style="margin-right: 100px; margin-left: 60px;">Restituzione in <br><strong>90 giorni garantita</strong></p>
+          </a>
+         </div>
+         <div class="lot">
+          <a class="linkbox" href="https://www.notino.it/perche-scegliere-notino/#phone" target="_blank">
+            <p style="margin-right: 100px; margin-left: 100px;" ><strong>Siamo qui per te<br></strong> tutti i giorni lavorativi</p>
+         </a>
+        </div>
+         <a class="linkbox" href="https://www.notino.it/perche-scegliere-notino/#benefit-store" target="_blank">
+            <p style="margin-right: 60px; margin-left: 100px;"><strong>UN' AMPIA SELEZIONE<br></strong> di cosmetici e profumi</p>
+         </a>
+        </div>
+        
+        <!--box3-->
+        <div id="boxtre">
+          <a>
+            <img class="img" src="https://cdn.notinoimg.com/images/gallery/ba/19/IT_Dior_Adorables_Parfum_Deau_Homepage_Mobile_768x340.jpg">
+          </a>
+          <a>
+            <img class="img" src="https://cdn.notinoimg.com/images/gallery/ba/19/it_mob_hp_Guerlain_w13_24.jpg">
+          </a>
+        </div>
+
+        <!--box4 pallini categorie-->
+        <div class="shop-categorie">
+            <div class="categoria">
+              <a class="ball" href="https://www.notino.it/sconti/">
+                <span>
+                  <img class="imgcat" src="https://cdn.notinoimg.com/images/gallery/hp-category/hp-category/hp-action.png" alt="Offerte"><br>
+                </span>
+                <span class="nome-cat" style="color: #dc0069;">OFFERTE</span>
+              </a>
+            </div>
+              
+            <div class="categoria">
+                <a class="ball" href="https://www.notino.it/profumi/">
+                  <span>
+                    <img class="imgcat" src="https://cdn.notinoimg.com/images/gallery/hp-category/hp-category/hp-perfumes.png" alt="Profumi"><br>
+                    </span>
+                    <span class="nome-cat">Profumi</span>
+                </a>
+            </div>
+
+            <div class="categoria">
+              <a  class="ball" href="https://www.notino.it/make-up/">
+                <span>
+                  <img class="imgcat" src="https://cdn.notinoimg.com/images/gallery/hp-category/hp-category/hp-makeup.png" alt="Trucco"><br>
+                  </span>
+                  <span class="nome-cat">Trucco</span>
+              </a>
+            </div>
+
+            <div class="categoria">
+              <a class="ball" href="https://www.notino.it/prodotti-per-capelli/">
+                <span>
+                  <img class="imgcat" src="https://cdn.notinoimg.com/images/gallery/hp-category/hp-category/hp-hair.png" alt="Capelli"><br>
+                  </span>
+                  <span class="nome-cat">Capelli</span>
+              </a>
+            </div>
+
+            <div class="categoria">
+              <a class="ball" href="https://www.notino.it/prodotti-per-il-viso/">
+                <span>
+                  <img class="imgcat" src="https://cdn.notinoimg.com/images/gallery/hp-category/hp-category/hp-skin.png" alt="Viso"><br>
+                  </span>
+                  <span class="nome-cat">Viso</span>
+              </a>
+            </div>
+
+            <div class="categoria">
+              <a class="ball" href="https://www.notino.it/prodotti-per-il-corpo/">
+                <span>
+                  <img class="imgcat" src="https://cdn.notinoimg.com/images/gallery/hp-category/hp-category/hp-body.png" alt="Corpo"><br>
+                  </span>
+                  <span class="nome-cat">Corpo</span>
+              </a>
+             </div>
+
+             <div class="categoria">
+              <a class="ball" href="https://www.notino.it/profumi-per-ambienti/">
+                <span>
+                  <img class="imgcat" src="https://cdn.notinoimg.com/images/gallery/hp-category/hp-category/hp-home-fragrance.png" alt="Profumi per ambienti"><br>
+                  </span>
+                  <span class="nome-cat">Profumi per <br>ambienti</span>
+              </a>
+            </div>
+        </div>
+
+         <!--box5-->
+         <h2 id="txt5" class="textbody">Dal mondo di profumi e cosmetici</h2>
+         <div id="box_cinque">
+          <div class="box_immagine_cinque">
+          <img onclick=onClick1() id="imgbooster" src="https://cdn-azure.notinoimg.com/cdn-cgi/image/width=660,q=80/blog/article/blog_skinboosterHZi2599ret169_2b555c.jpg">
+          <a href="https://www.notino.it/beautyblog/suggerimenti-e-consigli/skin-booster-e-quale-e-in-grado-di-illuminare-la-tua-pelle/">
+            <p>
+            Risveglia la pelle dal sonno invernale.<br>Hai bisogno di un booster!
+            </p>
+          </a>
+          </div>
+          <div class="box_immagine_cinque">
+            <img onclick=onClick2() id="imgdetox" src="https://cdn-azure.notinoimg.com/cdn-cgi/image/width=660,q=80/blog/article/blog_jarndetoxvlasHZi2319ret169_b05c4c.jpg">
+            <a href="https://www.notino.it/beautyblog/suggerimenti-e-consigli/come-fare-un-detox-primaverile-per-i-capelli-e-il-cuoio-capelluto/">
+              <p>
+              Un profondo refresh!<br> Scopri la magia del detox per capelli
+              </p>
+            </a>
+            </div>
+            <div class="box_immagine_cinque">
+              <img onclick=onClick3() id="imgmakeup" src="https://cdn-azure.notinoimg.com/cdn-cgi/image/width=660,q=80/blog/article/blog_KLASIKcoverSva482ret169_bbfe43.jpg">
+              <a href="https://www.notino.it/beautyblog/tutorial/il-miglior-trucco-classico-per-il-matrimonio/">
+                <p>
+                Tutorial: make-up elegante<br>
+                per un matrimonio con onde hollywoodiane
+                </p>
+              </a>
+              </div>
+        </div>
+
+        <!--box6 offerte-->
+        <h2 class="textbody">Questa settimana in offerta speciale</h2>
+        <div id="offertesettimana">
+          <div class="prodotti">
+            <ul>
+              <li class="item">
+                <a class="linkbox" href="/kerastase/elixir-ultime-olio-per-capelli-rigenerante-per-capelli-grassi/" target="_blank">
+                  <img class="imgprodotti" src="https://cdn.notinoimg.com/list/kerastase/3474636613908_01-o__3.jpg" style="margin: auto;">
+                  <p class="par">
+                  <span class="brand">Kérastase</span><br>
+                  <strong>Elixir Ultime L'huile Originale</strong><br>
+                  olio secco per tutti i tipi di capelli 100 ml<br>
+                  35,10
+                  </p>
+                </a>
+                <button class="elemento" onclick="togglePreferito(this)">
+                  <svg color="black" height="16px" width="24px" aria-label="Wishlist" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M11.9672727,23.12625 L11.1345455,22.5 C7.71636364,19.9875 5.05454545,17.44125 3.22909091,14.93625 C1.49454545,12.5625 0.538181818,10.27125 0.385454545,8.1375 C0.187012774,6.10535738 0.910493349,4.09271563 2.34545455,2.685 C3.50030137,1.52735746 5.04764879,0.880196689 6.65818182,0.88125 C7.91636364,0.88125 9.54181818,1.0275 10.9490909,2.15625 C11.3317201,2.4506027 11.6838868,2.78487158 12,3.15375 C12.3196784,2.78465931 12.674149,2.44925973 13.0581818,2.1525 C14.4727273,1.0275 16.1018182,0.87375 17.3636364,0.87375 C18.9734518,0.867070062 20.521226,1.51360865 21.6727273,2.67375 C23.1043181,4.08100668 23.8205042,6.0943981 23.6109091,8.1225 C23.4509091,10.26 22.4836364,12.55125 20.7381818,14.925 C18.9090909,17.4375 16.2290909,19.9875 12.8036364,22.5 L11.9672727,23.12625 Z M3.45818182,3.8925 C2.38163066,4.96207375 1.84474893,6.48463678 2.00363636,8.0175 C2.13090909,9.82875 2.98181818,11.82375 4.52727273,13.93875 C6.23636364,16.27875 8.74181818,18.6825 11.9745455,21.06375 C15.2181818,18.6675 17.7345455,16.26 19.4581818,13.90875 C21.0145455,11.79 21.8727273,9.78375 22.0036364,7.98375 C22.1659039,6.45046439 21.6284958,4.92640844 20.5490909,3.85875 C19.6976759,3.00042937 18.554287,2.51989764 17.3636364,2.52 C16.36,2.52 15.0763636,2.62875 14.0509091,3.45 C13.6107404,3.77112064 13.2301409,4.17123511 12.9272727,4.63125 L12.9272727,4.6575 L12,6 L11.0909091,4.665 C10.7856904,4.19920346 10.4027928,3.79291346 9.96,3.465 C8.94181818,2.65125 7.66181818,2.5425 6.66181818,2.5425 C5.46548613,2.54247938 4.31674864,3.02575684 3.46181818,3.88875 L3.45818182,3.8925 Z">
+                    </path>
+                </svg>
+              </button>
+              </li>
+              <li class="item">
+                <a class="linkbox" href="/kerastase/premiere-shampoo-per-capelli-per-capelli-rovinati/" target="_blank"> 
+                  <img class="imgprodotti" src="https://cdn.notinoimg.com/list/kerastase/3474637195809_01-o.jpg" style="margin: auto;"> 
+                  <p class="par">
+                  <span class="brand">Kérastase</span><br>
+                  <strong>Première Bain Décalcifiant Réparateur</strong><br>
+                  shampoo per capelli per capelli rovinati 250 ml<br>
+                  28,50
+                  </p>
+                </a>
+                <button class="elemento" onclick="togglePreferito(this)">
+                  <svg color="black" height="16px" width="24px" aria-label="Wishlist" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M11.9672727,23.12625 L11.1345455,22.5 C7.71636364,19.9875 5.05454545,17.44125 3.22909091,14.93625 C1.49454545,12.5625 0.538181818,10.27125 0.385454545,8.1375 C0.187012774,6.10535738 0.910493349,4.09271563 2.34545455,2.685 C3.50030137,1.52735746 5.04764879,0.880196689 6.65818182,0.88125 C7.91636364,0.88125 9.54181818,1.0275 10.9490909,2.15625 C11.3317201,2.4506027 11.6838868,2.78487158 12,3.15375 C12.3196784,2.78465931 12.674149,2.44925973 13.0581818,2.1525 C14.4727273,1.0275 16.1018182,0.87375 17.3636364,0.87375 C18.9734518,0.867070062 20.521226,1.51360865 21.6727273,2.67375 C23.1043181,4.08100668 23.8205042,6.0943981 23.6109091,8.1225 C23.4509091,10.26 22.4836364,12.55125 20.7381818,14.925 C18.9090909,17.4375 16.2290909,19.9875 12.8036364,22.5 L11.9672727,23.12625 Z M3.45818182,3.8925 C2.38163066,4.96207375 1.84474893,6.48463678 2.00363636,8.0175 C2.13090909,9.82875 2.98181818,11.82375 4.52727273,13.93875 C6.23636364,16.27875 8.74181818,18.6825 11.9745455,21.06375 C15.2181818,18.6675 17.7345455,16.26 19.4581818,13.90875 C21.0145455,11.79 21.8727273,9.78375 22.0036364,7.98375 C22.1659039,6.45046439 21.6284958,4.92640844 20.5490909,3.85875 C19.6976759,3.00042937 18.554287,2.51989764 17.3636364,2.52 C16.36,2.52 15.0763636,2.62875 14.0509091,3.45 C13.6107404,3.77112064 13.2301409,4.17123511 12.9272727,4.63125 L12.9272727,4.6575 L12,6 L11.0909091,4.665 C10.7856904,4.19920346 10.4027928,3.79291346 9.96,3.465 C8.94181818,2.65125 7.66181818,2.5425 6.66181818,2.5425 C5.46548613,2.54247938 4.31674864,3.02575684 3.46181818,3.88875 L3.45818182,3.8925 Z">
+                    </path>
+                </svg>
+              </button>
+              </li>
+              <li class="item">
+                <a class="linkbox" href="https://www.notino.it/sol-de-janeiro/brazilian-crush-cheirosa62-spray-profumato-per-corpo-e-capelli-da-donna/" target="_blank"> 
+                  <img class="imgprodotti" src="https://cdn.notinoimg.com/list/sol_de_janeiro/851604006130_01-o.jpg" style="margin: auto;"> 
+                  <p class="par">
+                  <span class="brand">Sol de Janeiro</span><br>
+                  <strong>Brazilian Crush Cheirosa '62</strong><br>
+                  spray profumato per corpo e capelli da donna 240 ml<br>
+                  25,90
+                  </p>
+                </a>
+                <button class="elemento" onclick="togglePreferito(this)">
+                  <svg color="black" height="16px" width="24px" aria-label="Wishlist" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M11.9672727,23.12625 L11.1345455,22.5 C7.71636364,19.9875 5.05454545,17.44125 3.22909091,14.93625 C1.49454545,12.5625 0.538181818,10.27125 0.385454545,8.1375 C0.187012774,6.10535738 0.910493349,4.09271563 2.34545455,2.685 C3.50030137,1.52735746 5.04764879,0.880196689 6.65818182,0.88125 C7.91636364,0.88125 9.54181818,1.0275 10.9490909,2.15625 C11.3317201,2.4506027 11.6838868,2.78487158 12,3.15375 C12.3196784,2.78465931 12.674149,2.44925973 13.0581818,2.1525 C14.4727273,1.0275 16.1018182,0.87375 17.3636364,0.87375 C18.9734518,0.867070062 20.521226,1.51360865 21.6727273,2.67375 C23.1043181,4.08100668 23.8205042,6.0943981 23.6109091,8.1225 C23.4509091,10.26 22.4836364,12.55125 20.7381818,14.925 C18.9090909,17.4375 16.2290909,19.9875 12.8036364,22.5 L11.9672727,23.12625 Z M3.45818182,3.8925 C2.38163066,4.96207375 1.84474893,6.48463678 2.00363636,8.0175 C2.13090909,9.82875 2.98181818,11.82375 4.52727273,13.93875 C6.23636364,16.27875 8.74181818,18.6825 11.9745455,21.06375 C15.2181818,18.6675 17.7345455,16.26 19.4581818,13.90875 C21.0145455,11.79 21.8727273,9.78375 22.0036364,7.98375 C22.1659039,6.45046439 21.6284958,4.92640844 20.5490909,3.85875 C19.6976759,3.00042937 18.554287,2.51989764 17.3636364,2.52 C16.36,2.52 15.0763636,2.62875 14.0509091,3.45 C13.6107404,3.77112064 13.2301409,4.17123511 12.9272727,4.63125 L12.9272727,4.6575 L12,6 L11.0909091,4.665 C10.7856904,4.19920346 10.4027928,3.79291346 9.96,3.465 C8.94181818,2.65125 7.66181818,2.5425 6.66181818,2.5425 C5.46548613,2.54247938 4.31674864,3.02575684 3.46181818,3.88875 L3.45818182,3.8925 Z">
+                    </path>
+                </svg>
+              </button>
+              </li>
+              <li class="item">
+                <a class="linkbox" href="https://www.notino.it/clinique/take-the-day-off-balsamo-struccante-e-detergente/" target="_blank">
+                  <img class="imgprodotti" src="https://cdn.notinoimg.com/list/clinique/020714215552_01-oo__30.jpg" style="margin: auto;">
+                  <p class="par">
+                  <span class="brand">Clinique</span><br>
+                  <strong>Take The Day Off™ Cleansing Balm</strong><br>
+                  balsamo struccante e detergente<br>
+                  26,50
+                  </p>
+                </a>
+                <button class="elemento" onclick="togglePreferito(this)">
+                  <svg color="black" height="16px" width="24px" aria-label="Wishlist" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M11.9672727,23.12625 L11.1345455,22.5 C7.71636364,19.9875 5.05454545,17.44125 3.22909091,14.93625 C1.49454545,12.5625 0.538181818,10.27125 0.385454545,8.1375 C0.187012774,6.10535738 0.910493349,4.09271563 2.34545455,2.685 C3.50030137,1.52735746 5.04764879,0.880196689 6.65818182,0.88125 C7.91636364,0.88125 9.54181818,1.0275 10.9490909,2.15625 C11.3317201,2.4506027 11.6838868,2.78487158 12,3.15375 C12.3196784,2.78465931 12.674149,2.44925973 13.0581818,2.1525 C14.4727273,1.0275 16.1018182,0.87375 17.3636364,0.87375 C18.9734518,0.867070062 20.521226,1.51360865 21.6727273,2.67375 C23.1043181,4.08100668 23.8205042,6.0943981 23.6109091,8.1225 C23.4509091,10.26 22.4836364,12.55125 20.7381818,14.925 C18.9090909,17.4375 16.2290909,19.9875 12.8036364,22.5 L11.9672727,23.12625 Z M3.45818182,3.8925 C2.38163066,4.96207375 1.84474893,6.48463678 2.00363636,8.0175 C2.13090909,9.82875 2.98181818,11.82375 4.52727273,13.93875 C6.23636364,16.27875 8.74181818,18.6825 11.9745455,21.06375 C15.2181818,18.6675 17.7345455,16.26 19.4581818,13.90875 C21.0145455,11.79 21.8727273,9.78375 22.0036364,7.98375 C22.1659039,6.45046439 21.6284958,4.92640844 20.5490909,3.85875 C19.6976759,3.00042937 18.554287,2.51989764 17.3636364,2.52 C16.36,2.52 15.0763636,2.62875 14.0509091,3.45 C13.6107404,3.77112064 13.2301409,4.17123511 12.9272727,4.63125 L12.9272727,4.6575 L12,6 L11.0909091,4.665 C10.7856904,4.19920346 10.4027928,3.79291346 9.96,3.465 C8.94181818,2.65125 7.66181818,2.5425 6.66181818,2.5425 C5.46548613,2.54247938 4.31674864,3.02575684 3.46181818,3.88875 L3.45818182,3.8925 Z">
+                    </path>
+                </svg>
+              </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!--box7 nuovi prodotti-->
+        <h2 class="textbody">Nuovi arrivi su notino</h2>
+        <div id="nuoviprodotti">
+          <div class="prodotti">
+            <ul>
+              <li class="item">
+                <a class="linkbox" href="https://www.notino.it/the-ordinary/hyaluronic-acid-2-b5-siero-idratante-con-ceramidi/" target="_blank">
+                  <img class="imgprodotti" src="https://cdn.notinoimg.com/list/the_ordinary/769915233506_01-o.jpg" style="margin: auto;">
+                  <p class="par">
+                  <span class="brand">The Ordinary</span><br>
+                  <strong>Hyaluronic Acid 2% + B5</strong><br>
+                  siero idratante con ceramidi<br>
+                  17,40
+                  </p>
+                </a>
+                <button class="elemento" onclick="togglePreferito(this)">
+                  <svg color="black" height="16px" width="24px" aria-label="Wishlist" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M11.9672727,23.12625 L11.1345455,22.5 C7.71636364,19.9875 5.05454545,17.44125 3.22909091,14.93625 C1.49454545,12.5625 0.538181818,10.27125 0.385454545,8.1375 C0.187012774,6.10535738 0.910493349,4.09271563 2.34545455,2.685 C3.50030137,1.52735746 5.04764879,0.880196689 6.65818182,0.88125 C7.91636364,0.88125 9.54181818,1.0275 10.9490909,2.15625 C11.3317201,2.4506027 11.6838868,2.78487158 12,3.15375 C12.3196784,2.78465931 12.674149,2.44925973 13.0581818,2.1525 C14.4727273,1.0275 16.1018182,0.87375 17.3636364,0.87375 C18.9734518,0.867070062 20.521226,1.51360865 21.6727273,2.67375 C23.1043181,4.08100668 23.8205042,6.0943981 23.6109091,8.1225 C23.4509091,10.26 22.4836364,12.55125 20.7381818,14.925 C18.9090909,17.4375 16.2290909,19.9875 12.8036364,22.5 L11.9672727,23.12625 Z M3.45818182,3.8925 C2.38163066,4.96207375 1.84474893,6.48463678 2.00363636,8.0175 C2.13090909,9.82875 2.98181818,11.82375 4.52727273,13.93875 C6.23636364,16.27875 8.74181818,18.6825 11.9745455,21.06375 C15.2181818,18.6675 17.7345455,16.26 19.4581818,13.90875 C21.0145455,11.79 21.8727273,9.78375 22.0036364,7.98375 C22.1659039,6.45046439 21.6284958,4.92640844 20.5490909,3.85875 C19.6976759,3.00042937 18.554287,2.51989764 17.3636364,2.52 C16.36,2.52 15.0763636,2.62875 14.0509091,3.45 C13.6107404,3.77112064 13.2301409,4.17123511 12.9272727,4.63125 L12.9272727,4.6575 L12,6 L11.0909091,4.665 C10.7856904,4.19920346 10.4027928,3.79291346 9.96,3.465 C8.94181818,2.65125 7.66181818,2.5425 6.66181818,2.5425 C5.46548613,2.54247938 4.31674864,3.02575684 3.46181818,3.88875 L3.45818182,3.8925 Z">
+                    </path>
+                </svg>
+              </button>
+              </li>
+              <li class="item">
+                <a class="linkbox" href="https://www.notino.it/essence/juicy-bomb-confezione-regaloper-le-labbra-6949381/" target="_blank"> 
+                  <img class="imgprodotti" src="https://cdn.notinoimg.com/list/essence/4059729476692_01-o.jpg" style="margin: auto;"> 
+                  <p class="par">
+                  <span class="brand">essence</span><br>
+                  <strong>Juicy Bomb</strong><br>
+                  confezione regalo (per le labbra)<br>
+                  12,00
+                  </p>
+                </a>
+                <button class="elemento" onclick="togglePreferito(this)">
+                  <svg color="black" height="16px" width="24px" aria-label="Wishlist" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M11.9672727,23.12625 L11.1345455,22.5 C7.71636364,19.9875 5.05454545,17.44125 3.22909091,14.93625 C1.49454545,12.5625 0.538181818,10.27125 0.385454545,8.1375 C0.187012774,6.10535738 0.910493349,4.09271563 2.34545455,2.685 C3.50030137,1.52735746 5.04764879,0.880196689 6.65818182,0.88125 C7.91636364,0.88125 9.54181818,1.0275 10.9490909,2.15625 C11.3317201,2.4506027 11.6838868,2.78487158 12,3.15375 C12.3196784,2.78465931 12.674149,2.44925973 13.0581818,2.1525 C14.4727273,1.0275 16.1018182,0.87375 17.3636364,0.87375 C18.9734518,0.867070062 20.521226,1.51360865 21.6727273,2.67375 C23.1043181,4.08100668 23.8205042,6.0943981 23.6109091,8.1225 C23.4509091,10.26 22.4836364,12.55125 20.7381818,14.925 C18.9090909,17.4375 16.2290909,19.9875 12.8036364,22.5 L11.9672727,23.12625 Z M3.45818182,3.8925 C2.38163066,4.96207375 1.84474893,6.48463678 2.00363636,8.0175 C2.13090909,9.82875 2.98181818,11.82375 4.52727273,13.93875 C6.23636364,16.27875 8.74181818,18.6825 11.9745455,21.06375 C15.2181818,18.6675 17.7345455,16.26 19.4581818,13.90875 C21.0145455,11.79 21.8727273,9.78375 22.0036364,7.98375 C22.1659039,6.45046439 21.6284958,4.92640844 20.5490909,3.85875 C19.6976759,3.00042937 18.554287,2.51989764 17.3636364,2.52 C16.36,2.52 15.0763636,2.62875 14.0509091,3.45 C13.6107404,3.77112064 13.2301409,4.17123511 12.9272727,4.63125 L12.9272727,4.6575 L12,6 L11.0909091,4.665 C10.7856904,4.19920346 10.4027928,3.79291346 9.96,3.465 C8.94181818,2.65125 7.66181818,2.5425 6.66181818,2.5425 C5.46548613,2.54247938 4.31674864,3.02575684 3.46181818,3.88875 L3.45818182,3.8925 Z">
+                    </path>
+                </svg>
+              </button>
+              </li>
+              <li class="item">
+                <a class="linkbox" href="https://www.notino.it/beauty/discovery-box-notino-intense-and-cozy-set-unisex/" target="_blank"> 
+                  <img class="imgprodotti" src="https://cdn.notinoimg.com/list/beauty/2800019614674_01-o.jpg" style="margin: auto;"> 
+                  <p class="par">
+                  <span class="brand">Beauty</span><br>
+                  <strong>Discovery Box Notino Intense and Cozy</strong><br>
+                  set unisex<br>
+                  7,20
+                  </p>
+                </a>
+                <button class="elemento" onclick="togglePreferito(this)">
+                  <svg color="black" height="16px" width="24px" aria-label="Wishlist" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M11.9672727,23.12625 L11.1345455,22.5 C7.71636364,19.9875 5.05454545,17.44125 3.22909091,14.93625 C1.49454545,12.5625 0.538181818,10.27125 0.385454545,8.1375 C0.187012774,6.10535738 0.910493349,4.09271563 2.34545455,2.685 C3.50030137,1.52735746 5.04764879,0.880196689 6.65818182,0.88125 C7.91636364,0.88125 9.54181818,1.0275 10.9490909,2.15625 C11.3317201,2.4506027 11.6838868,2.78487158 12,3.15375 C12.3196784,2.78465931 12.674149,2.44925973 13.0581818,2.1525 C14.4727273,1.0275 16.1018182,0.87375 17.3636364,0.87375 C18.9734518,0.867070062 20.521226,1.51360865 21.6727273,2.67375 C23.1043181,4.08100668 23.8205042,6.0943981 23.6109091,8.1225 C23.4509091,10.26 22.4836364,12.55125 20.7381818,14.925 C18.9090909,17.4375 16.2290909,19.9875 12.8036364,22.5 L11.9672727,23.12625 Z M3.45818182,3.8925 C2.38163066,4.96207375 1.84474893,6.48463678 2.00363636,8.0175 C2.13090909,9.82875 2.98181818,11.82375 4.52727273,13.93875 C6.23636364,16.27875 8.74181818,18.6825 11.9745455,21.06375 C15.2181818,18.6675 17.7345455,16.26 19.4581818,13.90875 C21.0145455,11.79 21.8727273,9.78375 22.0036364,7.98375 C22.1659039,6.45046439 21.6284958,4.92640844 20.5490909,3.85875 C19.6976759,3.00042937 18.554287,2.51989764 17.3636364,2.52 C16.36,2.52 15.0763636,2.62875 14.0509091,3.45 C13.6107404,3.77112064 13.2301409,4.17123511 12.9272727,4.63125 L12.9272727,4.6575 L12,6 L11.0909091,4.665 C10.7856904,4.19920346 10.4027928,3.79291346 9.96,3.465 C8.94181818,2.65125 7.66181818,2.5425 6.66181818,2.5425 C5.46548613,2.54247938 4.31674864,3.02575684 3.46181818,3.88875 L3.45818182,3.8925 Z">
+                    </path>
+                  </svg>
+              </button>
+              </li>
+              <li class="item">
+                <a class="linkbox" href="/loreal-paris/elseve-glycolic-gloss-siero-senza-risciacquo-per-capelli-piu-forti-e-luminosi/" target="_blank">
+                  <img class="imgprodotti" src="https://cdn.notinoimg.com/list_2k/loreal-paris/3600524143909_01-o.jpg" style="margin: auto;">
+                  <p class="par">
+                  <span class="brand">L’Oréal Paris</span><br>
+                  <strong>Elseve Glycolic Gloss</strong><br>
+                  siero senza risciacquo per capelli più forti e luminosi 150 ml<br>
+                  10,60
+                  </p>
+                </a>
+                <button class="elemento" onclick="togglePreferito(this)">
+                  <svg color="black" height="16px" width="24px" aria-label="Wishlist" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M11.9672727,23.12625 L11.1345455,22.5 C7.71636364,19.9875 5.05454545,17.44125 3.22909091,14.93625 C1.49454545,12.5625 0.538181818,10.27125 0.385454545,8.1375 C0.187012774,6.10535738 0.910493349,4.09271563 2.34545455,2.685 C3.50030137,1.52735746 5.04764879,0.880196689 6.65818182,0.88125 C7.91636364,0.88125 9.54181818,1.0275 10.9490909,2.15625 C11.3317201,2.4506027 11.6838868,2.78487158 12,3.15375 C12.3196784,2.78465931 12.674149,2.44925973 13.0581818,2.1525 C14.4727273,1.0275 16.1018182,0.87375 17.3636364,0.87375 C18.9734518,0.867070062 20.521226,1.51360865 21.6727273,2.67375 C23.1043181,4.08100668 23.8205042,6.0943981 23.6109091,8.1225 C23.4509091,10.26 22.4836364,12.55125 20.7381818,14.925 C18.9090909,17.4375 16.2290909,19.9875 12.8036364,22.5 L11.9672727,23.12625 Z M3.45818182,3.8925 C2.38163066,4.96207375 1.84474893,6.48463678 2.00363636,8.0175 C2.13090909,9.82875 2.98181818,11.82375 4.52727273,13.93875 C6.23636364,16.27875 8.74181818,18.6825 11.9745455,21.06375 C15.2181818,18.6675 17.7345455,16.26 19.4581818,13.90875 C21.0145455,11.79 21.8727273,9.78375 22.0036364,7.98375 C22.1659039,6.45046439 21.6284958,4.92640844 20.5490909,3.85875 C19.6976759,3.00042937 18.554287,2.51989764 17.3636364,2.52 C16.36,2.52 15.0763636,2.62875 14.0509091,3.45 C13.6107404,3.77112064 13.2301409,4.17123511 12.9272727,4.63125 L12.9272727,4.6575 L12,6 L11.0909091,4.665 C10.7856904,4.19920346 10.4027928,3.79291346 9.96,3.465 C8.94181818,2.65125 7.66181818,2.5425 6.66181818,2.5425 C5.46548613,2.54247938 4.31674864,3.02575684 3.46181818,3.88875 L3.45818182,3.8925 Z">
+                    </path>
+                </svg>
+              </button>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+
+    <section id="colorsection">
+     <!--MODALE-->
+      <div id="modale">
+        <div id="lastt">
+        <h1 style="color: rgb(0, 0, 0);" >Skincare routine: </h1>
+       
+        <section id="album-view">
+        </section>
+
+        <section id="modal-view" class="hidden">
+        </section>
+        </div>
+      </div>
+
+     <!--API makeup brand-->
+     <div id="ricercamakeup">
+       <form>
+         <label for="brand" style="font-family:Arial, Helvetica, sans-serif;">Prodotti più famosi:</label>
+          <input placeholder="Inserisci il nome del Brand (esempio: Maybelline)"
+         type="text" id="brand" name="brand" required>
+          <button type="submit">Cerca</button>
+       </form>
+    
+       <div id="library-view"></div>
+      </div>
+    
+     </section>
+
+      <!--FOOTER-->
+      <footer>
+
+        <!--coda-->
+        <div id="coda">
+
+          <section id="contatti">
+             <div class="riferimenti">
+              <span class="hsmallfooter"><strong>011 1988 7822</strong></span><br>
+              <span class="hsmallfooter"> lun-ven 8-17:00, sab 9-17</span>
+             </div>
+             <div class="riferimenti">
+              <a class="option" href="mailto:info@notino.it">info@notino.it</a>
+             </div>
+             <div class="riferimenti">
+              <a class="option" href="https://www.notino.it/contatti/">Informazioni di contatto</a>
+            </div>
+          </section>
+
+          <section id="email">
+              <h2 class="hfooter">Offerte, sconti e novità in <br> anteprima sulla tua e-mail</h2>
+              <div class="ricerca">  
+                <input placeholder="Inserisci la tua e-mail" type="search" value="">
+              </div>
+          </section>
+
+          <section id="chisiamo">
+              <h2 class="hfooter">Perchè scegliere Notino?</h2>
+              <div>
+                <ul>
+                  <li class="listachisiamo">
+                    <span class="scrittachisiamo">Perchè scegliere Notino?</span>
+                  </li>
+                  <li class="listachisiamo">
+                    <span class="scrittachisiamo">Chi siamo?</span>
+                  </li>
+                  <li class="listachisiamo">
+                    <span class="scrittachisiamo">Solo prodotti originali</span>
+                  </li>
+                  <li class="listachisiamo">
+                    <span class="scrittachisiamo">Codice sconto - buono sconto Notino</span>
+                  </li>
+                  <li class="listachisiamo">
+                    <span class="scrittachisiamo">Protezione dei dati personali</span>
+                  </li>
+                  <li class="listachisiamo">
+                    <span class="scrittachisiamo">Recensioni</span>
+                  </li>
+                </ul>
+              </div>
+          </section>
+
+          <section id="app">
+              <h2 class="hfooter">Scarica l'app per dispositivi mobili</h2>
+              <a class="applicazione" target="_blank" href="https://play.google.com/store/apps/details?id=com.pragonauts.notino&hl=it&gl=US">
+                <img class="imgapp" src="https://i0.wp.com/www.matteobagno.com/wp-content/uploads/2020/04/4941600488bb91237ad855ce9e47758c_google-play-logo-google-play-android-app-store-play-now-button-_800-800-e1586425620598.jpg?ssl=1">
+              </a>
+              <a class="applicazione" target="_blank" href="https://apps.apple.com/it/app/notino-fragrance-and-beauty/id1261812151">
+                <img class="imgapp" src="appstore.jpg">
+              </a>
+          </section>
+
+          <section id="paesi">
+            <ul>
+              <li class="listapaesi">
+                <a class="linkimg" target="_blank" href="https://www.notino.co.uk/">
+                  <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f1ec-1f1e7.png" height="25" width="25">
+                  <span class="nomepaese">Great Britain</span>
+              </a>
+              </li>
+              <li class="listapaesi">
+                <a class="linkimg" target="_blank" href="https://www.notino.es/">
+                  <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f1ea-1f1f8.png"height="25" width="25">
+                  <span class="nomepaese">España</span>
+                </a>
+              </li>
+              <li class="listapaesi">
+                <a class="linkimg" target="_blank" href="https://www.notino.de/">
+                  <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f1e9-1f1ea.png" height="25" width="25">
+                  <span class="nomepaese">Deutschland</span>
+                </a>
+              </li>
+              <li class="listapaesi">
+                <a class="linkimg" target="_blank" href="https://www.notino.pt/">
+                  <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f1f5-1f1f9.png" height="25" width="25">
+                  <span class="nomepaese">Portugal</span>
+                </a>
+              </li>
+              <li class="listapaesi">
+                <a class="linkimg" target="_blank" href="https://www.notino.fr/">
+                  <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f1eb-1f1f7.png" height="25" width="25">
+                  <span class="nomepaese">France </span>
+                </a>
+              </li>
+              <li class="listapaesi">
+                <a class="linkimg" target="_blank" href="https://www.notino.be/">
+                  <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f1e7-1f1ea.png" height="25" width="25">
+                  <span class="nomepaese">Belgique</span>
+                </a>
+              </li>
+              <li class="listapaesi">
+                <a class="linkimg" target="_blank" href="https://www.notino.dk/">
+                  <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f1e9-1f1f0.png" height="25" width="25">
+                  <span class="nomepaese">Danmark </span>
+                </a>
+              </li>
+              <li class="listapaesi">
+                <a class="linkimg" target="_blank" href="https://www.notino.ie/">
+                  <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f1ee-1f1ea.png" height="25" width="25">
+                  <span class="nomepaese">Ireland</span>
+                </a>
+              </li>
+              <li class="listapaesi">
+                <a class="linkimg" target="_blank" href="https://www.notino.se/">
+                  <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f1f8-1f1ea.png" height="25" width="25">
+                  <span class="nomepaese">Sverige</span>
+                </a>
+              </li>
+              <li class="listapaesi">
+                <a class="linkimg" target="_blank" href="https://www.notino.pl/">
+                  <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f1f5-1f1f1.png" height="25" width="25">
+                  <span class="nomepaese">Polska</span>
+                </a>
+              </li>
+              <li class="listapaesi">
+                <a class="linkimg" target="_blank" href="https://www.notino.si/">
+                  <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f1f8-1f1ee.png" height="25" width="25">
+                  <span class="nomepaese">Slovenjia</span>
+                </a>
+              </li>
+              <li class="listapaesi">
+                <a class="linkimg" target="_blank" href="https://www.notino.ch/">
+                  <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f1e8-1f1ed.png" height="25" width="25">
+                  <span class="nomepaese">Schweiz</span>
+                </a>
+              </li>
+              <li class="listapaesi">
+                <a class="linkimg" target="_blank" href="https://www.notino.cz/">
+                  <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f1e8-1f1ff.png" height="25" width="25">
+                  <span class="nomepaese">Česká republika</span>
+                </a>
+              </li>
+              <li class="listapaesi">
+                <a class="linkimg" target="_blank" href="https://www.notino.lt/">
+                  <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f1f1-1f1f9.png" height="25" width="25">
+                  <span class="nomepaese">Lietuva</span>
+                </a>
+              </li>
+              <li class="listapaesi">
+                <a class="linkimg" target="_blank" href="https://www.notino.fi/">
+                  <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f1eb-1f1ee.png" height="25" width="25">
+                  <span class="nomepaese">Suomi</span>
+                </a>
+              </li>
+              <li class="listapaesi">
+                <a class="linkimg" target="_blank" href="https://www.notino.nl/">
+                  <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f1f3-1f1f1.png" height="25" width="25">
+                  <span class="nomepaese">Nederland</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+
+          <section id="lastline">
+                <a class="linkpagamento"
+                href="https://www.notino.it/spedizione-e-consegna/#carta-di-credito-p-302" target="_blank">
+                  <img class="carta" alt="visa" src="https://cdn.notinoimg.com/assets/img/payments/visa.39d96ca.png">
+                </a>
+                <a class="linkpagamento" href="https://www.notino.it/spedizione-e-consegna/#carta-di-credito-p-302" target="_blank">
+                  <img class="carta" alt="mc" src="https://cdn.notinoimg.com/assets/img/payments/mc.480a4dd.png">
+                </a>
+                <a  class="linkpagamento"
+                href="https://www.notino.it/spedizione-e-consegna/#klarna-p-405" target="_blank">
+                  <img class="carta" alt="klarna" src="https://cdn.klarna.com/1.0/shared/image/generic/logo/de_de/basic/logo_black.png?width=100">
+                </a>
+                <a class="linkpagamento"
+                href="https://www.notino.it/spedizione-e-consegna/#paypal-p-215" target="_blank">
+                  <img class="carta" alt="paypal" src="https://cdn.notinoimg.com/assets/img/payments/paypal.c282b07.png">
+                </a>
+                <a class="linkpagamento"
+                href="https://www.notino.it/spedizione-e-consegna/#apple-pay-p-336" target="_blank">
+                  <img class="carta" alt="applepay" src="https://cdn.notinoimg.com/assets/img/payments/applepay.9a0b7c0.png">
+                </a>
+                <a class="linkpagamento"
+                href="https://www.notino.it/spedizione-e-consegna/#google-pay-p-354" target="_blank">
+                  <img class="carta" alt="googlepay" src="https://cdn.notinoimg.com/assets/img/payments/googlepay.b804649.png">
+                </a>
+          </section>
+
+          <p class="marchioregistrato">© 2024 Notino Italia s.r.l.</p>
+            <p class="marchioregistrato">Notino Italia s.r.l., Piazza Solferino, 20, 10121 Torino, Italia. C. F.: 11630700018, P. IVA: IT11630700018.<br> Iscritta presso la Camera di Commercio di Torino, Numero REA: TO - 1228741
+            </p>
+        </div>
+      </footer>
+
+   </body>
+</html>
